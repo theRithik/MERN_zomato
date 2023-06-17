@@ -13,23 +13,13 @@ class MenuDisplay extends Component{
 
     removeOrder=(id)=>{
         if(this.placeOrder.indexOf(id)>-1){
-            return (
-                this.placeOrder.slice(this.placeOrder.indexOf(id),1)
-            )
+                this.placeOrder.splice(this.placeOrder.indexOf(id),1)
         }
         this.props.finalOrder(this.placeOrder)
+        console.log(this.placeOrder)
 
     }
 
-    renderPlace=(data)=>{
-    if(data){
-        return data.map((item,index)=>{
-            return(
-                <p key={index} style={{display:'inline-block'}}> {item},</p>
-            )
-        })
-    }
-    }
             renderOrder=(orders)=>{
                 if(orders){
                     return orders.map((item,index)=>{
@@ -72,7 +62,7 @@ class MenuDisplay extends Component{
             <div className="col-md-12">
                     <h3 style={{textAlign:'center'}}>Menu</h3>
                     <h4>Item Added</h4>
-                    <h4>Item Number Added. {this.renderPlace(this.placeOrder)}
+                    <h4>Item Number Added. {this.renderOrder(this.placeOrder)}
                         
                     </h4>
             
