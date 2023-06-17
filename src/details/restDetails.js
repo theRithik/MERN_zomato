@@ -29,7 +29,7 @@ class RestDetails extends Component {
             <>
             <div className="container" style={{marginTop:'50px'}}>
                 <div className="row">
-                    <div className="col-md-6" style={{display:'inline-block'}}>
+                    <div className="col-md-6" style={{display:'inline-block',marginTop:'10px'}}>
                         <img src={details.restaurant_thumb} alt={details.restaurant_name} style={{width:'500px',height:'400px', borderRadius:'20px'}} />
                     </div>
                     <div className="col-md-6">
@@ -75,8 +75,6 @@ class RestDetails extends Component {
       const response = await axios(`${url}+${id}`)
       const menuResponse = await axios(`${menuUrl}+${id}`)
      this.setState({restDeatils:response.data[0], menuList:menuResponse.data})
-     console.log(this.state.menuList)
-
 
         
     }

@@ -45,8 +45,8 @@ class MenuDisplay extends Component{
                             </h6>                 
                         </div>
                         <div className="col-md-4">
-                            <button className="btn btn-success" onClick={()=>this.handleClick(item.menu_id)} style={{padding:'5px 2px 0 2px',marginTop:'10px', marginRight:'20px'}}><span class="material-symbols-outlined">add</span></button>
-                            <button className="btn btn-danger" onClick={()=>{this.removeOrder(item.menu_id)}} style={{padding:'5px 2px 0 2px',marginTop:'10px'}}><span class="material-symbols-outlined">remove</span></button>
+                            <button className="btn btn-success" onClick={()=>this.handleClick(item.menu_id)} style={{padding:'5px 2px 0 2px',marginTop:'10px', marginRight:'20px'}}><span className="material-symbols-outlined">add</span></button>
+                            <button className="btn btn-danger" onClick={()=>{this.removeOrder(item.menu_id)}} style={{padding:'5px 2px 0 2px',marginTop:'10px'}}><span className="material-symbols-outlined">remove</span></button>
                         </div>
 
                     </div>
