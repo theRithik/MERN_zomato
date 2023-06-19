@@ -1,5 +1,7 @@
 import React,{Component} from "react";
 import './placOrder.css'
+
+const url="http://3.17.216.66:4000/menuItem"
 class PlaceOrder extends Component{
     constructor(props){
         super(props)
@@ -9,6 +11,7 @@ class PlaceOrder extends Component{
             phone:"6779098765",
             email:"rithik@gmail.com",
             address:"MG Road vijayawada",
+            cost:0,
             menuItem:""
         }
     }
@@ -47,13 +50,41 @@ class PlaceOrder extends Component{
                         <input type="text" className="form-control" name="address" value={this.state.address} onChange={this.handleChange}/>
                     </div>
                     </div>
-                    <button type="submit" className="btn btn-primary" style={{marginTop:'5%', marginLeft:'5%', marginBottom:'5%'}}>Procced</button>
+                    <div className="row">
+                        
+                    </div>
+                    <h5 style={{marginTop:'2%', marginLeft:'5%'}}>Total Price: {this.state.cost}</h5>
+                    <button type="submit" className="btn btn-primary" style={{marginTop:'2%', marginLeft:'5%', marginBottom:'5%'}}>Procced</button>
 
                 </div>
                 
             </div>
             </>
         )
+    }
+
+    componentDidMount(){
+        let menuItem =sessionStorage.getItem('menu')
+       
+        fetch(url,{
+            method:'POST',
+        headers:{
+            'accept':'application/json',
+            'Content-Type':'application/json'
+        },
+        body:menuItem
+            
+    })
+    .then((res)=>res.json())
+    .then((data)=>{
+        let totalCost=0;
+        data.map((item)=>{   
+                totalCost=totalCost+Number(item.menu_price);
+                 return 'ok'
+            
+        })
+       this.setState({menuItem:data,cost:totalCost})
+    })
     }
 }
 export default PlaceOrder
