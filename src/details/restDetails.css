@@ -24,3 +24,8 @@
 a{
     text-decoration: none;
 }
+
+#restBack{
+    background-image: url('https://qph.cf2.quoracdn.net/main-qimg-f5a89b881a599e0b118a6801dcee02f0');
+    background-repeat:no-repeat
+}

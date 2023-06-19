@@ -1,5 +1,5 @@
 import React,{Component} from "react";
-
+import './Search.css'
 const url="http://3.17.216.66:4000/location"
 const rurl="http://3.17.216.66:4000/restaurant?stateId="
 class Search extends Component{
@@ -40,8 +40,9 @@ if(data){
     render(){
         return(
             <>
-            <div className="container" style={{margin:'50px'}}>
-                <h1 style={{textAlign:'center'}}>Xomato</h1>
+            <div className="container">
+                <div className="backgroundImg" style={{paddingBottom:"200px"}}>
+                <h1  style={{textAlign:'center',paddingBottom:'70px',paddingTop:"150px"}}>Xomato</h1>
                 <div className="row">
                 <div className="col-md-4" style={{marginLeft:'170px'}}>
             <select className="form-select" aria-label="Default select example" defaultValue={'DEFAULT'} onChange={this.handleChange}>
@@ -54,6 +55,7 @@ if(data){
               <option value="DEFAULT">select a restaurant</option>
              {this.renderLocation(this.state.rest)}
               </select>
+              </div>
               </div>
               </div>
               </div>

@@ -62,7 +62,7 @@ class MenuDisplay extends Component{
             <div className="col-md-12">
                     <h3 style={{textAlign:'center'}}>Menu</h3>
                     <h4>Item Added</h4>
-                    <h4>Item Number Added. {this.renderOrder(this.placeOrder)}
+                    <h4>Item Number  {this.renderOrder(this.placeOrder)} Added.
                         
                     </h4>
             

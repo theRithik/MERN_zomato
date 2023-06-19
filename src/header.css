@@ -1,0 +1,16 @@
+.navbar{
+    background-color: rgb(225, 36, 36);
+    color: white;
+    margin-top: 50px;
+    margin-left: 70px;
+    margin-right: 70px;
+    border-radius: 30px;
+}
+.navbar-brand{
+    color: white;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.navbar-brand:hover{
+    color: white;
+}

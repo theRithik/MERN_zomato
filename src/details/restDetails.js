@@ -18,6 +18,11 @@ class RestDetails extends Component {
         }
     }
 
+    placeOrder=()=>{
+        sessionStorage.setItem('menu', JSON.stringify(this.state.userMenu))
+        this.props.history.push(`/placeOrder/${this.state.restDeatils.restaurant_name}`)
+    }
+
     orders=(id)=>{
         this.setState({userMenu:id})
     }
@@ -27,7 +32,7 @@ class RestDetails extends Component {
         let details= this.state.restDeatils
         return(
             <>
-            <div className="container" style={{marginTop:'50px'}}>
+            <div className="container" id="restBack" style={{paddingTop:'50px'}}>
                 <div className="row">
                     <div className="col-md-6" style={{display:'inline-block',marginTop:'10px'}}>
                         <img src={details.restaurant_thumb} alt={details.restaurant_name} style={{width:'500px',height:'400px', borderRadius:'20px'}} />
@@ -56,6 +61,7 @@ class RestDetails extends Component {
                             
  </div>
  <button className="btn btn-danger"><Link to={`/listing/${this.state.mealId}`}>Back</Link></button>
+ <button className="btn btn-success" onClick={this.placeOrder}>Procced</button>
                     </div>
                 </div>
                 <hr/>

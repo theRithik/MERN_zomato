@@ -19,16 +19,16 @@ const ListMenu=(props)=>{
             if(listData.length>0){
             return listData.map((item)=>{
                 return (
-                   <div className="card" key={item.restaurant_id} style={{borderColor:'transparent', boxShadow:'5px 6px grey',marginLeft:'30px', marginBottom:'50px',paddingBottom:'20px'}} >
+                   <div className="card" key={item.restaurant_id} style={{ marginLeft:'30px', marginBottom:'50px',paddingBottom:'20px'}} >
                       <div className="row" key={item.restaurant_id} style={{marginLeft:'10px'}}>
                      
-                        <div className="col-md-4" >
+                        <div className="col-md-4"  style={{marginTop:"5px"}}>
                         <Link to ={`/details?restId=${item.restaurant_id}`}>
                          <img src={item.restaurant_thumb} alt={item.restaurant_name} style={{width:'220px', height:'180px', borderRadius:'20px'}}/>
                         </Link>
                          </div>
 
-                         <div className="col-md-7" >
+                         <div className="col-md-7" style={{marginTop:"5px"}} >
                           <Link to ={`/details?restId=${item.restaurant_id}`}>  
                           <h5>{item.restaurant_name}</h5> 
                          <p style={{marginBottom:'0'}}>{item.address}</p>

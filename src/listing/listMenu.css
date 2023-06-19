@@ -2,3 +2,7 @@ a{
     text-decoration: none;
     color: black;
 }
+
+.card:hover{
+    box-shadow: 5px 6px 10px grey;
+}
