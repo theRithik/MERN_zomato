@@ -1,0 +1,140 @@
+{
+  "data": [
+    {
+      "id": 9468,
+      "restName": "Captain Sam's",
+      "name": "amith",
+      "phone": "6779098765",
+      "email": "amith@gmail.com",
+      "address": "MG Road vijayawada",
+      "cost": 646,
+      "menuItem": [
+        {
+          "_id": "6187768162a1816f88594dcb",
+          "menu_id": 26,
+          "menu_name": "Hawaiian Ecstasy Pizza - Large (12')",
+          "description": "Paneer,Pineapple,Capsicum,Chilly and Cheese",
+          "restaurant_id": 6,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/341/f09436f4e12eeab19c748e69c385d341.png",
+          "menu_type": "vegetarian",
+          "menu_price": "169"
+        },
+        {
+          "_id": "6187768162a1816f88594dcd",
+          "menu_id": 28,
+          "menu_name": "Veggie Delight Pizza - Medium (9')",
+          "description": "Onion,Capsicum,Mushroom,Tomato,Olives and Cheese",
+          "restaurant_id": 6,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/447/1be98d6bbee331ae7827514f30686447.png",
+          "menu_type": "vegetarian",
+          "menu_price": "139"
+        },
+        {
+          "_id": "6187768162a1816f88594dcc",
+          "menu_id": 27,
+          "menu_name": "Large Classic Cheesy Pizza With Tandoori Paneer",
+          "description": "All time Favorite Large Pizza with assorted Toppings and Paneer Cubes",
+          "restaurant_id": 6,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/34d/7ab40b39dd655da9c68e52ed5388a34d.jpg",
+          "menu_type": "vegetarian",
+          "menu_price": "169"
+        },
+        {
+          "_id": "6187768162a1816f88594dce",
+          "menu_id": 29,
+          "menu_name": "Red Indian Pizza - Large (12')",
+          "description": "Hungarian Pepper,Onion,Capsicum,Paneer and Cheese",
+          "restaurant_id": 6,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/8ea/5298eb9874c44688c522714e701058ea.jpg",
+          "menu_type": "vegetarian",
+          "menu_price": "169"
+        }
+      ],
+      "menu": "[26,28,27,29]"
+    },
+    {
+      "id": 3906,
+      "restName": "AMA Cafe",
+      "name": "rithik",
+      "phone": "6779098765",
+      "email": "rithik@gmail.com",
+      "address": "MG Road vijayawada",
+      "cost": 715,
+      "menuItem": [
+        {
+          "_id": "6187768162a1816f88594dd3",
+          "menu_id": 34,
+          "menu_name": "All American BBQ Chicken Sandwich",
+          "description": "With arizona dip and in toasted focaccia bread.",
+          "restaurant_id": 7,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/c6b/483977dd38433dfb3b28d50808765c6b.jpg",
+          "menu_type": "non-vegetarian",
+          "menu_price": "275"
+        },
+        {
+          "_id": "6187768162a1816f88594dd1",
+          "menu_id": 32,
+          "menu_name": "The Juicy Chicken Burger",
+          "description": "Served with fries",
+          "restaurant_id": 7,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/ecd/d0892dbbbe428d45bcc626c41badcecd.jpg",
+          "menu_type": "non-vegetarian",
+          "menu_price": "200"
+        },
+        {
+          "_id": "6187768162a1816f88594dd2",
+          "menu_id": 33,
+          "menu_name": "Dharamkot's Cheesy Mushroom Zucchini Sandwich",
+          "description": "With cocktail dip and in toasted focaccia bread.",
+          "restaurant_id": 7,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/167/dcab664d62035f35153938c47b3d3167.jpg",
+          "menu_type": "vegetarian",
+          "menu_price": "240"
+        }
+      ],
+      "menu": "[34,32,33]"
+    },
+    {
+      "id": 9201,
+      "restName": "Burger King",
+      "name": "rahul",
+      "phone": "6779098765",
+      "email": "rahul@gmail.com",
+      "address": "MG Road vijayawada",
+      "cost": 477.14,
+      "menuItem": [
+        {
+          "_id": "6187768162a1816f88594de5",
+          "menu_id": 52,
+          "menu_name": "Cheese Melt Down Burger",
+          "description": "Cheese oozing spicy veg patty, veggies and creamy sauce. An indulgent treat from our King's Collection!",
+          "restaurant_id": 11,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/5a9/10759d3aaa3f99219c916c9efd9195a9.jpg",
+          "menu_type": "vegetarian",
+          "menu_price": "169"
+        },
+        {
+          "_id": "6187768162a1816f88594de7",
+          "menu_id": 54,
+          "menu_name": "Crispy Veg Combo",
+          "description": "Our best-selling burger with crispy veg patty, fresh onion and our signature sauce. Comes with Fries + Exclusive Pepsi.",
+          "restaurant_id": 11,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/135/b2a0cc85a53134ba273cc30efdb00135.jpg",
+          "menu_type": "vegetarian",
+          "menu_price": "209.14"
+        },
+        {
+          "_id": "6187768162a1816f88594de4",
+          "menu_id": 51,
+          "menu_name": "King Fries",
+          "description": "The perfect crispy partner.",
+          "restaurant_id": 11,
+          "menu_image": "https://b.zmtcdn.com/data/dish_photos/2dc/7d31d7425ab6de31e2e92806561352dc.jpg",
+          "menu_type": "vegetarian",
+          "menu_price": "99"
+        }
+      ],
+      "menu": "[52,54,51]"
+    }
+  ]
+}

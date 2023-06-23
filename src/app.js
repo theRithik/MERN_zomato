@@ -6,6 +6,7 @@ import Footer from './footer'
 import ListDisplay from './listing/listDisplay'
 import RestDetails from './details/restDetails'
 import PlaceOrder from './orders/placeOrder'
+import DisplayOrder from './orders/displayOrders'
 const App =()=>{
     return(
         <>
@@ -15,6 +16,7 @@ const App =()=>{
         <Route path='/listing/:id' component={ListDisplay}/>
         <Route path='/details' component={RestDetails}/>
         <Route path='/placeOrder/:restname' component={PlaceOrder}/>
+        <Route path='/displayOrders' component={DisplayOrder}/>
         <Footer/>
         </BrowserRouter>
        

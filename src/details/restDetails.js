@@ -5,8 +5,8 @@ import './restDetails.css'
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 import MenuDisplay from "./menuDisplay"
 
-const url=" http://3.17.216.66:4000/details/"
-const menuUrl="http://3.17.216.66:4000/menu/"
+const url="http://localhost:5000/admin/deatils/"
+const menuUrl="http://localhost:5000/admin/menu/"
 class RestDetails extends Component {
     constructor(){
         super()
@@ -78,8 +78,8 @@ class RestDetails extends Component {
     // async Await using for api calling
    async componentDidMount(){
         const id= this.props.location.search.split('=')[1]
-      const response = await axios(`${url}+${id}`)
-      const menuResponse = await axios(`${menuUrl}+${id}`)
+      const response = await axios(`${url}${id}`)
+      const menuResponse = await axios(`${menuUrl}${id}`)
      this.setState({restDeatils:response.data[0], menuList:menuResponse.data})
 
         

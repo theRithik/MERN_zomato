@@ -1,7 +1,7 @@
 import React,{Component} from "react";
 import './Search.css'
-const url="http://3.17.216.66:4000/location"
-const rurl="http://3.17.216.66:4000/restaurant?stateId="
+const url="http://localhost:5000/admin/locations"
+const rurl="http://localhost:5000/admin/restaurants?state_id="
 class Search extends Component{
     constructor(){
         super()

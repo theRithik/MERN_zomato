@@ -4,7 +4,7 @@ import axios from 'axios'
 import './ListDisplay.css'
 import ListMenu from './listMenu'
 
-const url="http://3.17.216.66:4000/restaurant?mealtype_id="
+const url="http://localhost:5000/admin/meals?mealtype_id="
 class ListDisplay extends Component{
     constructor(){
         super()
@@ -13,17 +13,6 @@ class ListDisplay extends Component{
           
         }
     }
-//     onOpen=(data)=>{
-// if(data){
-//     return data.map((item)=>{
-//         return(
-//             <div className="conatiner" key={item.restaurant_id}>
-//                 <h1>{item.restaurant_name}</h1>
-//             </div>
-//         )
-//     })
-// }
-//     }
     render(){
         return(
             <>
@@ -44,7 +33,7 @@ class ListDisplay extends Component{
     }
     componentDidMount(){
         const id=this.props.match.params.id
-        sessionStorage.setItem('mealId', id);
+        sessionStorage.setItem('mealId',id);
         axios(`${url}+${id}`)
         .then((res)=>{
             this.setState({restaurantList:res.data})
