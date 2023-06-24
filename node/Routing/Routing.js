@@ -190,15 +190,33 @@ Routing.post('/orderDetails',(req,res)=>{
         if(dberr){console.log(dberr)}
         else{
             const db= dbres.db('Zomato')
-            const data = req.body
-            db.collection('orderDetails').insertOne({data}),((err,result)=>{
+            db.collection('orderDetails').insertOne(req.body,(err,result)=>{
                 if(err){
-                    res.send(result)
+                    res.send(err)
                 }
                 else{
                     res.send(result)
                 }
 
+            })
+        }
+    })
+})
+
+Routing.get('/getDetails',(req,res)=>{
+    client.connect((dberr,dbres)=>{
+        if(dberr){
+            console.log(dberr)
+        }
+        else{
+            const db= dbres.db('Zomato')
+            db.collection('orderDetails').find({}).toArray((err,result)=>{
+                if(err){
+                    console.log(err)
+                }
+                else{
+                    res.send(result)
+                }
             })
         }
     })
